@@ -1,0 +1,290 @@
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lobster&family=Manrope&family=Neonderthaw&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500&family=Sedgwick+Ave&family=Yeseva+One&display=swap');
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Yeseva One', cursive; */
+/* https://github.com/Porgramming-Hero-web-course/convention-center-mushfiqueyeasir.git */
+
+
+:root {
+
+    --pageColor: #E5E5E5;
+
+    --navBarTitleColor:#3E3E3E;
+    --navBarLinksColor: #fd1010;
+    
+    --headingTitleColor: #FFFFFF;
+    --headingParagraphColor:#FFFFFF;
+    --headingButtonFontColor: #3F87F5;
+    --headingButtonColor: #FFFFFF;
+
+    --article-1TitleColor: #0A0826;
+    --article-1ParagraphColor: #0A0826;
+
+    --packageTitleColor: #0A0826;
+    --packageCardTitleColor: #231D4F;
+    --packageCardParagraphColor: #848199;
+    --packageCardBgColor:#FFFFFF;
+    --packageButtonColor:#3F87F5;
+    --packageButtonBgColor: #FEF5FA;
+    --packagePremimumBgColor:#3F87F5;
+
+    --questionColor: #383838;
+
+    
+  }
+  /* body{
+    background-color: var(--pageColor);
+  } */
+
+
+  /* Navigation Bar style */
+  .navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--navBarTitleColor);
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;   
+    color: #3E3E3E;
+    font-size: 16px;
+}
+  
+
+  /* banner styles */
+  .fs-1 {
+    font-size: calc(1.200rem + 1.5vw)!important;
+  }
+  .fs-5 {
+    font-size: calc(0.8rem + .5vw)!important;
+  }
+ 
+  .carousel-item{
+    height: 586px;
+    object-fit: fill;
+  }
+  .carousel-caption{
+    left: 0%;
+    right: 0%;
+    padding: 5px;
+  }
+  .carousel-caption>h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;  
+    color: var(--headingTitleColor);
+  }
+  .carousel-caption>p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;    
+    font-weight: 300;  
+    color: var(--headingTitleColor);
+    width: 56vh;
+  }
+  .carousel-caption>a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--headingButtonFontColor);
+    background-color: var(--headingButtonColor);
+    border-color: var(--headingButtonColor);
+  }
+
+  /* About us styles */
+ 
+  .about>h1{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 32px;
+  }
+  .about>p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+  }
+  .toast-header{
+    border-left: 10px solid var(--packageButtonColor);
+  }
+  .toast-header strong{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 8px;
+  }
+  
+
+
+  /* Package styles */
+  .package{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--packageTitleColor);
+  }
+  .row{
+    --bs-gutter-x: 0;
+  }
+  .row * {
+        padding-right: calc(var(--bs-gutter-x) * 0);
+        padding-left: calc(var(--bs-gutter-x) * 0);
+  }
+
+.list-group-item{
+  border: 0;
+  padding: 0rem 0rem;
+}
+.card{
+  border: none;
+}
+.card-header {
+  margin-bottom: 0;
+  background-color: var(--packageCardBgColor);
+  border-bottom: none;
+  padding: 0rem 0rem;
+}
+.card-header> h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--packageCardTitleColor);
+}
+.card-header> h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--packageCardTitleColor);
+}
+
+.card-header> p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--packageCardParagraphColor);
+  margin-bottom: 0.5rem;
+  
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 0rem 0rem;
+}
+
+.card-footer {
+  padding: 1rem 1rem;
+  background-color: var(--packageCardBgColor);
+  border-top: none;
+}
+
+.card-footer > a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--packageButtonColor);
+  background-color: var(--packageButtonBgColor); 
+  border-color: var(--packageButtonBgColor);
+  width: 80%; 
+  border-radius: 20px;
+}
+.card-footer > a:hover{
+  background-color: var(--packageButtonBgColor); 
+  border-color: var(--packageButtonBgColor); 
+}
+.w-80{
+  width: 80%;
+}
+
+.premium{
+  background-color: var(--packagePremimumBgColor); 
+  color: var(--headingParagraphColor)!important;
+}
+.premium a{
+  background-color: var(--headingTitleColor);
+  color: var(--packagePremimumBgColor)!important;
+  border-color:  var(--headingTitleColor);
+}
+.premium a:hover{
+  background-color: var(--headingTitleColor);
+  border-color:  var(--packagePremimumBgColor);
+}
+.shadow-rounded{
+  border-radius: 20px;
+  box-shadow: 0px 30px 34px rgba(63, 135, 245, 0.25);
+}
+.hotbox{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: #FF4E4E;
+  padding: 4px;
+  margin: 0;
+  margin-top: -28px;
+}
+
+/* question styles  */
+.accordion-item{
+  margin-bottom: 10px;
+  border: 1px solid #D5E5FB;
+}
+.accordion-button{
+  border: 1px solid #D5E5FB;
+}
+.accordion-button:focus {
+  border-color: #D5E5FB;
+   box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+   color: var(--questionColor); 
+   background-color: #FFFFFF; 
+   box-shadow:none;
+}
+
+/* Video Section Styles */
+.content {
+  position: fixed;
+  bottom: 50%;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.parallax {
+  position: relative; 
+  background-size: cover; 
+  overflow: hidden;
+   background-attachment: fixed  
+  }
+  .playIcon{
+    padding-top:80px;
+    padding-bottom: 80px;
+    float:none;
+    margin-left:auto;
+    margin-right:auto
+  }
+  .videoTitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-bottom:15px
+  }
+  .videoParagraph{
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+    color:#d6d5d5;
+    font-size: 20px;
+    font-weight: 300;
+    line-height:26px;
+    display:inline-block !important;
+    margin-bottom:25px;
+  }
+
+ /* footer styles */
+ footer{
+   background-color: #0B0D17;
+
+ }
+
+
+
+
